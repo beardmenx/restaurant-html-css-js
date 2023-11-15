@@ -1,0 +1,306 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  width: 1960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==================== HEADER  ============================================  */
+
+.header {
+  background-color: #233000;
+  padding-bottom: 100px;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.header__reservation {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.header__reservation-phone {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__reservation-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 20px 46px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+  font-family: "Rufina", serif;
+}
+
+.header__main {
+  margin: 250px 0 50px;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 250px;
+}
+
+.main__content-wrapper {
+  position: absolute;
+  top: -134px;
+  left: 55px;
+}
+
+.main__content-title {
+  max-width: 1057px;
+  color: #fff;
+  font-size: 148px;
+  font-weight: 700;
+  line-height: 172px;
+}
+
+.main__content-bg {
+  background-image: url("../images/food/meet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  height: 1100px;
+}
+
+.main__content-text {
+  margin-top: 50px;
+  width: 565px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
+
+.main__content-scroll {
+  color: #fff;
+  font-family: Rufina;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  transform: rotate(90deg);
+  position: absolute;
+  left: -277px;
+  bottom: -420px;
+}
+
+.main__content-spice-img {
+  width: 260px;
+  height: 240px;
+}
+
+.main__content-spice {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  bottom: -670px;
+  right: -330px;
+}
+
+.second__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.startDiet-left__img {
+  margin-bottom: 54px;
+}
+
+.startDiet-left__title {
+  color: #fff;
+  width: 493px;
+  height: 159px;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px; /* 123.529% */
+  margin-bottom: 54px;
+}
+
+.startDiet-left__text {
+  width: 565px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
+
+.content__startDiet-right {
+  max-width: 510px;
+}
+
+.startDiet-right__text {
+  color: #fff;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+  margin-bottom: 84px;
+}
+
+/* ==================== MENU  ============================================  */
+
+.menu__section {
+  background-color: #fff;
+}
+
+.menu__section-container {
+  background-image: url("../images/leavesBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.our__menu-items {
+  display: grid;
+  gap: 50px 200px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.our__menu-inner {
+  width: 532px;
+  margin: 170px 0 160px;
+}
+
+.our__menu-title {
+  color: #000;
+  font-size: 108px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px; /* 111.111% */
+}
+
+.our__menu-text {
+  color: #4d4d4d;
+  font-size: 24px;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
+
+.menu__item {
+  max-width: 792px;
+  height: 34px;
+  margin-bottom: 368px;
+}
+.menu__item-price {
+  color: #000;
+  font-family: "Rufina", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  margin-left: 710px;
+}
+
+.menu__item-title {
+  color: #000;
+  font-size: 68px;
+  line-height: 84px;
+  padding: 24px 0;
+}
+
+.menu__item-subscr {
+  color: #4d4d4d;
+  font-size: 24px;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
+
+/* ==================== COOKING  ============================================  */
+
+.cooking {
+  background-color: #ebf0e4;
+}
+
+.cooking__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 222px;
+}
+
+.cooking__block-text {
+  width: 650px;
+}
+
+.cooking__block-title {
+  color: #000;
+  font-size: 108px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px; /* 111.111% */
+}
+
+.cooking__block-subscr {
+  color: #4d4d4d;
+  font-size: 24px;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
