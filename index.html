@@ -21,7 +21,11 @@
         <div class="header__navigation">
           <div class="header__logo">
             <a href="/">
-              <img class="logo" src="images/logo.svg" alt="" />
+              <img
+                class="logo"
+                src="images/logo.svg"
+                alt="FoodZero Restaurant logotype"
+              />
             </a>
             <img class="menu-btn" src="images/navBtn.svg" alt="" />
           </div>
@@ -155,23 +159,242 @@
         </div>
       </div>
     </section>
-
     <!-- ==================== COOKING  ============================================ -->
 
     <section class="cooking">
       <div class="container">
-        <div class="cooking__wrapper">
-          <div class="cooking__block-img">
-            <img src="images/cooking.png" alt="" />
+        <div class="cooking__inner">
+          <div class="cooking__picture">
+            <div class="cooking__picture-wrapper"></div>
+            <img class="cooking__img" src="images/cooking.png" alt="" />
           </div>
-          <div class="cooking__block-text">
-            <h3 class="cooking__block-title">Excellent cook</h3>
-            <p class="cooking__block-subscr">
+
+          <div class="cooking__description">
+            <h2 class="cooking__title">Excellent cook</h2>
+            <p class="cooking__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               lorem id penatibus imperdiet. Turpis egestas ultricies purus
               auctor tincidunt lacus nunc.
             </p>
+            <img class="leaf-img" src="images/leaf2.png" alt="" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== FEATURES ========================== -->
+
+    <section class="features">
+      <div class="container">
+        <ul class="features__items">
+          <li class="features__item">
+            <div class="features__item-inner">
+              <img
+                class="features__item-img"
+                src="images/fish-icon.png"
+                alt=""
+              />
+            </div>
+            <h3 class="features__item-title">Premium Quality</h3>
+            <p class="features__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
+              congue arcu
+            </p>
+          </li>
+
+          <li class="features__item">
+            <div class="features__item-inner">
+              <img
+                class="features__item-img"
+                src="images/carrot-Icon.png"
+                alt=""
+              />
+            </div>
+            <h3 class="features__item-title">Seasonal Vegetables</h3>
+            <p class="features__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
+              congue arcu
+            </p>
+          </li>
+
+          <li class="features__item">
+            <div class="features__item-inner">
+              <img
+                class="features__item-img"
+                src="images/lemon-Icon.png"
+                alt=""
+              />
+            </div>
+            <h3 class="features__item-title">Fresh Fruit</h3>
+            <p class="features__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
+              congue arcu
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================== BLOG ========================== -->
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog__wrapper">
+          <div class="post">
+            <div class="post__bg">
+              <div class="post__category">
+                <a href="/" class="post__category-text">Fashion</a>
+              </div>
+            </div>
+
+            <div class="post__subscr-wrapper">
+              <div class="post__author">
+                <div class="author__avatar">
+                  <img src="images/author/avatar.png" alt="" />
+                </div>
+                <h4 class="author__name">Julie Christie</h4>
+                <div class="dot"></div>
+                <p class="post__date">October 17,2021</p>
+                <div class="dot"></div>
+                <p class="post__time">3:33 pm</p>
+                <div class="dot"></div>
+                <span class="post__comment">2 comments</span>
+              </div>
+
+              <h2 class="post__title">
+                Fruit and vegetables and protection against diseases
+              </h2>
+
+              <p class="post__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="/" class="post__link">
+                <div>Read More</div>
+                <img src="images/arrow-right.svg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post__bg post__bg-vegetables">
+              <div class="post__category">
+                <a href="/" class="post__category-text">Fashion</a>
+              </div>
+            </div>
+
+            <div class="post__subscr-wrapper">
+              <div class="post__author">
+                <div class="author__avatar">
+                  <img src="images/author/avatar1.png" alt="" />
+                </div>
+                <h4 class="author__name">Dianne Russell</h4>
+                <div class="dot"></div>
+                <p class="post__date">October 17,2021</p>
+                <div class="dot"></div>
+                <p class="post__time">3:33 pm</p>
+                <div class="dot"></div>
+                <span class="post__comment">2 comments</span>
+              </div>
+
+              <h2 class="post__title">
+                Asparagus Spring Salad with Rocket, Goat's Cheese
+              </h2>
+
+              <p class="post__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="/" class="post__link">
+                <div>Read More</div>
+                <img src="images/arrow-right.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== RESERVATION ========================== -->
+
+    <section class="reservetion">
+      <div class="container">
+        <h2 class="reservetion__title">Make a Reservation</h2>
+        <p class="reservation__text">Get in touch with restaurant</p>
+        <form class="reservetion__form">
+          <input
+            class="input__date"
+            type="date"
+            value="2023-11-20"
+            min="2023-11-20"
+            max="2023-12-31"
+          />
+
+          <select class="select__time" name="" id="">
+            <option value="">12:00</option>
+            <option value="">13:00</option>
+            <option value="">14:00</option>
+            <option value="">15:00</option>
+            <option value="">16:00</option>
+            <option value="">17:00</option>
+            <option value="">18:00</option>
+            <option value="">19:00</option>
+            <option value="">20:00</option>
+            <option value="">21:00</option>
+            <option value="">22:00</option>
+            <option value="">23:00</option>
+          </select>
+
+          <select class="select__person" name="" id="">
+            <option value="1person">1 Person</option>
+            <option value="2persons" selected>2 Persons</option>
+            <option value="romantic">Romantic</option>
+            <option value="4person">4 Persons</option>
+            <option value="more4persons">more than 4 persons</option>
+          </select>
+        </form>
+        <button class="reservation__btn" type="submit">Book Now</button>
+      </div>
+    </section>
+
+    <!-- ========================== CATEGORY ========================== -->
+
+    <section class="category">
+      <div class="container">
+        <h2 class="category__title">Calories Energy Balance</h2>
+        <p class="category__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <div class="category__items-wrapper">
+          <a href="/" class="category__link">
+            <div class="category__item category__item-starters">
+              <h4 class="category__item-title">Starters</h4>
+              <img
+                src="images/arrow-right.svg"
+                alt=""
+                class="category__item-arrow"
+              />
+            </div>
+          </a>
+          <a href="/" class="category__link">
+            <div class="category__item category__item-mains">
+              <h4 class="category__item-title">Mains</h4>
+              <img
+                src="images/arrow-right.svg"
+                alt=""
+                class="category__item-arrow"
+              />
+            </div>
+          </a>
+          <a href="/" class="category__link">
+            <div class="category__item category__item-soups">
+              <h4 class="category__item-title">Soups</h4>
+              <img
+                src="images/arrow-right.svg"
+                alt=""
+                class="category__item-arrow"
+              />
+            </div>
+          </a>
         </div>
       </div>
     </section>

@@ -28,7 +28,9 @@ li {
   list-style: none;
 }
 
-img {
+img,
+section,
+div {
   padding: 0;
   margin: 0;
 }
@@ -211,13 +213,11 @@ body {
 
 .menu__section {
   background-color: #fff;
-}
-
-.menu__section-container {
   background-image: url("../images/leavesBg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
+  padding-top: 10px;
 }
 
 .our__menu-items {
@@ -280,27 +280,363 @@ body {
   background-color: #ebf0e4;
 }
 
-.cooking__wrapper {
+.cooking__inner {
   display: flex;
   justify-content: space-between;
+  padding-top: 90px;
+}
+
+.cooking__picture-wrapper {
+  background-image: url("../images/leaf.png");
+  background-repeat: no-repeat;
+  background-position: 0 50px;
+  height: 380px;
+  width: 420px;
+}
+
+.cooking__img {
+  margin-top: -250px;
+  margin-bottom: -42px;
+}
+
+.cooking__description {
+  width: 650px;
   padding-top: 222px;
 }
 
-.cooking__block-text {
-  width: 650px;
+.cooking__title {
+  color: #000;
+  font-size: 108px;
+  font-weight: 700;
+  line-height: 120px; /* 111.111% */
 }
 
-.cooking__block-title {
+.cooking__text {
+  color: #4d4d4d;
+  font-size: 24px;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+  margin-bottom: 30px;
+}
+
+.leaf-img {
+  width: 500px;
+  height: 500px;
+  margin-left: 200px;
+}
+
+/* ========================== FEATURES ========================== */
+
+.features {
+  padding: 200px 0;
+}
+
+.features__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features__item {
+  width: 500px;
+  height: 470px;
+}
+
+.features__item-inner {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: #ebf0e4;
+  margin: 0 auto 39px;
+}
+
+.features__item-img {
+  padding: 38px;
+}
+
+.features__item-title {
   color: #000;
+  text-align: center;
+  font-size: 48px;
+  line-height: 64px; /* 133.333% */
+  padding-bottom: 39px;
+}
+
+.features__item-text {
+  color: #4d4d4d;
+  text-align: center;
+  font-size: 24px;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
+
+/* ========================== BLOG========================== */
+
+.blog {
+  padding: 120px 0;
+}
+
+.blog__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post {
+  width: 792px;
+}
+
+.post__bg {
+  background-image: url("../images/posts/fruitsPost.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 792px;
+  width: 792px;
+  padding-top: 12px;
+  margin-bottom: 68px;
+}
+
+.post__category {
+  width: 204px;
+  height: 62px;
+  padding: 10px 30px;
+  background: #5e6600;
+  margin-left: 573px;
+}
+
+.post__category-text {
+  color: #fff;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  display: block;
+  text-align: center;
+  font-family: Rufina;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 184.615% */
+}
+
+.post__subscr-wrapper {
+  margin-left: 72px;
+}
+
+.post__author {
+  width: 590px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 48px;
+  color: #5e6600;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #5e6600;
+}
+
+.post__title {
+  color: #000;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+
+  width: 645px;
+  font-family: Rufina;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  border-bottom: 4px dotted #000;
+  padding-bottom: 5px;
+  margin-bottom: 36px;
+}
+
+.post__text {
+  color: var(--4D4D4D, #4d4d4d);
+  font-size: 22px;
+  line-height: 140%; /* 30.8px */
+  letter-spacing: 0.44px;
+  margin-bottom: 46px;
+}
+
+.post__link {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 82px;
+}
+
+.post__link img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.post__link:hover img {
+  transform: translateX(100%);
+}
+
+.post__bg-vegetables {
+  background-image: url("../images/posts/vegetablesPost.jpg");
+}
+
+/* ========================== RESERVATION   ========================== */
+
+.reservetion {
+  padding: 240px 0;
+  background: #ebf0e4;
+}
+
+.reservetion__title {
+  text-align: center;
+  color: #000;
+  font-size: 108px;
+  line-height: 120px; /* 111.111% */
+}
+
+.reservation__text {
+  color: #4d4d4d;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+  margin-bottom: 132px;
+}
+
+.reservetion__form {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 132px;
+}
+
+.reservetion__form input,
+.reservetion__form select {
+  padding: 30px 40px;
+  width: 440px;
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
+
+.reservation__btn {
+  width: 344px;
+  padding: 20px 46px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid var(--000000, #000);
+  background: var(--233000, #233000);
+  color: var(--FFFFFF, #fff);
+  font-family: Rufina;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+  cursor: pointer;
+}
+
+/* ========================== CATEGORY   ========================== */
+
+.category {
+  padding-top: 128px;
+  padding-bottom: 190px;
+}
+
+.category__title {
+  width: 1100px;
+  margin: 0 auto 18px;
+  color: var(--000000, #000);
+  text-align: center;
   font-size: 108px;
   font-style: normal;
   font-weight: 700;
   line-height: 120px; /* 111.111% */
 }
 
-.cooking__block-subscr {
-  color: #4d4d4d;
-  font-size: 24px;
-  line-height: 140%; /* 33.6px */
-  letter-spacing: 0.48px;
+.category__text {
+  text-align: center;
+  margin-bottom: 126px;
+}
+
+.category__items-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.category__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 40px;
+}
+
+.category__item-starters {
+  background-image: url("../images/food/potatoBacon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 712px;
+  width: 508px;
+}
+
+.category__item-title {
+  color: #233000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+}
+
+.category__item-mains {
+  background-image: url("../images/food/rackOfLamp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 712px;
+  width: 508px;
+}
+
+.category__item-soups {
+  background-image: url("../images/food/soup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 712px;
+  width: 508px;
+}
+
+.category__item-arrow {
+  width: 48px;
+  height: 28px;
+}
+
+.category__item-arrow {
+  transition: transform 0.5s ease-in-out;
+}
+
+.category__link:hover img {
+  transform: translateX(70%);
 }
