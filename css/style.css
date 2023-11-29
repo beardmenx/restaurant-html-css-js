@@ -44,9 +44,110 @@ body {
 }
 
 .container {
-  width: 1960px;
+  max-width: 1960px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* =================== BURGER MENU ============================ */
+
+.menu {
+  background-color: #5e6600;
+  z-index: 999;
+  position: absolute;
+  min-width: 1960px;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: top 1s ease-in-out;
+}
+
+.menu__close {
+  top: -1100px;
+  transition: top 1s ease-in-out;
+}
+
+.menu__close-btn {
+  padding-top: 40px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.menu__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__social-link {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.menu__list-items {
+  padding-top: 182px;
+  padding-bottom: 222px;
+}
+
+.menu__list-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.menu__link-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 20px;
+}
+
+.menu__link-dot:hover {
+  color: #9caa00;
+}
+
+.menu__list-link li:hover {
+  cursor: pointer;
+  color: #9caa00;
+}
+
+.menu__list-item {
+  color: #fff;
+  font-family: Rufina;
+  font-size: 66px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style-type: disc;
+}
+
+.menu__contacts {
+  width: 248px;
+  color: #fff;
+}
+
+.menu__contacts-title {
+  font-family: Rufina;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+}
+
+.dots {
+  margin-bottom: 38px;
+}
+
+.menu__contacts-telephone {
+  font-size: 18px;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: 0.36px;
+}
+
+.menu__contacts-adress {
+  margin-top: 38px;
 }
 
 /* ==================== HEADER  ============================================  */
@@ -54,6 +155,7 @@ body {
 .header {
   background-color: #233000;
   padding-bottom: 100px;
+  padding-top: 10px;
 }
 
 .header__navigation {
@@ -67,6 +169,7 @@ body {
   display: flex;
   align-items: center;
   gap: 45px;
+  margin-left: 10px;
 }
 
 .menu-btn {
@@ -655,8 +758,17 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
+.category__link {
+  transition: box-shadow 0.4s ease-in-out;
+}
+
 .category__link:hover img {
   transform: translateX(70%);
+}
+
+.category__link:hover {
+  background: #fff;
+  box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.8);
 }
 
 /* ========================== COMMENTS SLIDER  ========================== */
@@ -864,4 +976,9 @@ body {
 
 .social-link:hover {
   transform: translateY(-10px);
+}
+
+/* =================================== @ MEDIA QUERY=================================================== */
+
+@media (max-width: 1633px) {
 }
